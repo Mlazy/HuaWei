@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no" >
+    <!--添加链接图标-->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!--搜索优化-->
+
+    <title>华为商城
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
+        华为Mate10、荣耀V10、华为P10、荣耀9、荣耀畅玩7X、华为Mate9、
+        荣耀V9
+    </title>
+    <!--网页简短描述-->
+    <meta name="description" content="华为商城是华为旗下面向全国服务的电子商务平台官网，我们提供正品华为手机(华为Mate10、荣耀V10、华为P10、荣耀9、荣耀畅玩7X、华为Mate9、荣耀V9等)、平板电脑、配件等全新华为产品，品质保证！" />
+    <!--关键词-->
+    <meta name="keywords" content="华为商城,华为官网,华为手机官网,华为平板电脑,华为笔记本" />
+    <!--写在pc端当用手机打开时同网址时会跳转到手机端-->
+    <!--<meta name="mobile-agent" content="format=xhtml;url=http://m.vmall.com/">-->
+    <!--华为登录声明-->
+    <meta property="wb:webmaster" content="f62bd8cc2f7d9778" />
+    <!--公用css-->
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/log%20in.css">
+    <script src="js/flexible.js"></script>
+</head>
+<body>
+<header>
+    <h2>华为帐号-登录</h2>
+    <p>华为账号适用于访问所有华为服务，您可登录该账号访问晕服务、华为商城、华为/荣耀官网、花粉俱乐部及更多服务。</p>
+</header>
+<section>
+    <form action="">
+        <div class="inputPublic">
+            <input type="text" placeholder="手机号/邮件地址">
+        </div>
+        <div class="inputPublic">
+            <div class="inputPassword">
+                <input type="password" placeholder="密码">
+            </div>
+            <div class="inputPasswordImg">
+                <img src="img/passwordImg.png" alt="">
+            </div>
+        </div>
+        <div id="Verification-code">
+            <div class="inputPublic verification">
+                <input type="text" placeholder="验证码">
+            </div>
+            <div class="Verification_code">
+                <input id="code" type="button" value="点击生成验证码"
+                       onclick="createCode()"/>
+            </div>
+        </div>
+        <div class="prompt">
+
+        </div>
+        <button class="login">登录</button>
+        <div class="required">
+            <input id="Checkbox" type="checkbox">
+            <label for="Checkbox">记住账号</label>
+        </div>
+
+    </form>
+</section>
+<footer>
+    <div class="registered">
+        <a href="#">注册账号</a>
+        <a href="#">忘记密码？</a>
+    </div>
+    <div class="space-line-div">
+        <span>其他登录方法</span>
+    </div>
+    <div class="LoginMethod">
+        <a href="#">
+            <img src="img/wap_qq.png" alt="">
+        </a>
+        <a href="#">
+            <img src="img/wap_alipay.png" alt="">
+        </a>
+    </div>
+</footer>
+<script>
+        function createCode(){
+//            alert(123);
+            var code;
+            code='';
+            var codeLength = 4;//验证码长度
+            var checkCode=document.getElementById("code");
+            var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H',
+                    'I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+            //方法 随机数   Math.random();
+            //random[35] 代表？
+            for(var i=0;i<codeLength;i++){//执行次数？   4     0 1 2 3
+                var index = Math.floor(Math.random()*36);//[0,35]
+                code += random[index];//code = code + random[index]   + 连接符
+            }
+//        alert(code);//四位?
+            checkCode.value=code;
+    }
+</script>
+</body>
+</html>

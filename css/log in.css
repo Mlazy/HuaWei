@@ -1,0 +1,156 @@
+header{
+    padding: 0.5rem 0.3rem;
+    text-align: center;
+}
+header h2{
+    font-weight: 500;
+    padding-bottom: 0.15rem;
+}
+header p{
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+}
+section{
+    padding: 0 0.5rem;
+}
+section .inputPublic{
+    text-align: center;
+    background-color: #EFEFEF;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    padding: 0 16px;
+    min-height: 40px;
+}
+section input{
+    width: 100%;
+    height: 40px;
+    background-color: #EFEFEF;
+    font-size: 15px;
+    color: rgb(0,0,0);
+}
+section .inputPassword{
+    float: left;
+    width: 85%;
+}
+section .inputPasswordImg{
+    float: right;
+    width: 15%;
+}
+section .inputPasswordImg img{
+    width: 24px;
+    margin-top: 8px;
+}
+#Verification-code{
+    min-height: 48px;
+}
+section .verification{
+    float: left;
+    width: 45%;
+}
+section .Verification_code{
+    float: right;
+    width: 45%;
+    min-height: 40px;
+    margin-right: 10%;
+}
+section .Verification_code button{
+    width: 100%;
+    min-height: 40px;
+    background-color: #EFEFEF;
+    border: none;
+}
+section button.login{
+    width: 100%;
+    opacity: 0.2;
+    background: #007dff;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+section div.prompt{
+    padding-left: 20px;
+}
+section .required{
+    position: relative;
+    width: 90%;
+    margin: 0 auto 16px;
+}
+section .required label{
+    width: 18px;
+    height: 18px;
+    margin: 0 8px;
+    vertical-align: bottom;
+    background-color: white;
+}
+section .required input[type=checkbox]{
+    width: 15px;
+    height: 1px;
+    vertical-align: middle;
+}
+section .required input[type=checkbox]::before,
+section .required input[type=checkbox]::after {
+    position: absolute;
+    display: block;
+    content: '';
+    transition: 0.3s all ease;
+}
+section .required input[type=checkbox]::before {
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #dedede;
+}
+section .required input[type=checkbox]::after {
+    top: 4px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    background-color: #fcfcfc;
+}
+section .required input[type=checkbox]:checked::before {
+    border-color: #27AE60;
+}
+section .required input[type=checkbox]:checked::after {
+    background-color: rgb(0,125,225);
+    text-align: center;
+    line-height: 15px;
+    content: '\2714';
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 0 16px;
+}
+footer .registered{
+    margin-bottom: 8px;
+}
+footer .registered a{
+    color: #007dff;
+}
+footer .registered a:first-child{
+    margin-right: 32px;
+}
+footer .space-line-div{
+    padding: 0 8px;
+    margin: 23px 0 15px 0;
+    height: 1px;
+    line-height: 0;
+    background: -webkit-linear-gradient(left,#fcfcfc,#cdcccc,#cdcccc,#fcfcfc);
+}
+footer .space-line-div span{
+    background: #fcfcfc;
+    padding: 0 16px;
+    color: rgba(0,0,0,0.5);
+}
+footer .LoginMethod a{
+    width: 50px;
+}
+footer .LoginMethod a:first-child{
+    margin-right: 20px;
+}

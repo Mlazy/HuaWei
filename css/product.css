@@ -1,0 +1,346 @@
+header{
+    position: fixed;
+    top: 0;
+    height: 0.73rem;
+    text-align: center;
+    background-color: white;
+}
+header>a{
+    width: 0.3rem;
+    height: 0.3rem;
+    margin: 0.21rem 0.3rem 0.21rem;
+    background: url("../img/icon11_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header ul{
+    margin-left: 0.4rem;
+}
+header ul li{
+    float: left;
+    line-height: 0.72rem;
+}
+header ul li.active a{
+    color: #d5464d;
+    border-bottom: 2px solid #d5444b;
+
+}
+header ul li a{
+    width: 1rem;
+    font-size: 0.25rem;
+    color: #333333;
+    font-weight: bold;
+}
+header .shortcut{
+    float: right;
+}
+header .shortcut a{
+    width: 0.42rem;
+    margin-top: 0.15rem;
+    margin-right: 0.3rem;
+    height: 0.42rem;
+    background-image: url("../img/icon_header_nav.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#banner{
+    margin-top: 0.73rem;
+    position: relative;
+    height: 6.4rem;
+}
+#banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+#banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#Detailspage{
+    padding: 0.2rem 0.5rem;
+    font-size: 0.25rem;
+}
+#Detailspage h3{
+    font-size: 0.245rem;
+}
+#Detailspage .price{
+    color: #e01d2d;
+}
+#Detailspage .Introduction{
+    color: #ca151e;
+    font-size: 0.2rem;
+}
+#Detailspage .textOmitted{
+    display: inline-block;
+    width: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#discount{
+    font-size: 0.2rem;
+    padding: 0.1rem 0.5rem;
+    background-color: #f6f6f6;
+    border-bottom: 10px solid #eaeaea;
+}
+#discount span{
+    padding: 0 0.5rem;
+    background-image:url("../img/icon_discount.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#discount i{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.26rem;
+    background-image: url("../img/icon_arrow_more.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#content{
+    padding: 0.1rem 0.5rem;
+    border-bottom: 5px solid #eaeaea;
+}
+#content dl{
+    padding: 0.1rem 0;
+    border-bottom: 1px solid #eaeaea;
+}
+#content dl dt{
+    float: left;
+    width: 1rem;
+    font-size: 0.26rem;
+    padding-top: 0.2rem;
+    color: #888888;
+}
+#content dl dd{
+    padding-left: 1.2rem;
+}
+#content dl dd a{
+    font-size: 0.16rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    padding: 0 0.2rem;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 20px;
+    border: 1px solid #bababa;
+    color: #333;
+    margin: 0.1rem 0;
+}
+#content dl dd a.active{
+    color: #ca151e;
+    border-color: #ca151e;
+}
+#content .digitalfield dl{
+    border: none;
+}
+#content .digitalfield dd b{
+    display: inline-block;
+    width: 1rem;
+    height: 0.8rem;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-size: 50% ;
+}
+#content .digitalfield dd .Less{
+    background: #bbb url("../img/icon53.png");
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-position: left center;
+}
+#content .digitalfield dd input{
+    width: 0.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    vertical-align: top;
+}
+#content .digitalfield dd .plus{
+    background: #bbb url("../img/icon53.png");
+    border-radius:0 0.5rem 0.5rem 0;
+    background-position: right center;
+}
+#service p{
+    padding: 0.1rem 0.5rem;
+    color: #888;
+}
+#service p:first-child{
+    border-bottom: 1px solid #eaeaea;
+}
+#service p:first-child i:first-child{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/icon_insurance.png) no-repeat;
+    background-size: 0.3rem 0.3rem;
+    vertical-align: middle;
+}
+#service p:first-child i:last-child{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url("../img/icon_arrow_more.png");
+    background-size: 0.3rem 0.3rem;
+    vertical-align: middle;
+    margin-left: 1.6rem;
+}
+#service p:first-child span{
+    font-size: 0.2rem;
+    display: inline-block;
+    padding-left: 0.1rem;
+}
+#service p:first-child em{
+    display: inline-block;
+    color: #888;
+    font-size: 0.2rem;
+    padding-left: 0.1rem;
+    font-style: normal;
+}
+#service p:nth-child(2){
+    font-size: 0.25rem;
+}
+#service p:nth-child(2) a{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #ca151e;
+    padding: 0 0.2rem;
+    border-radius: 20px;
+    border: 1px solid #ca151e;
+    margin-left: 0.1rem;
+}
+#service p:nth-child(3){
+    padding-left: 0.9rem;
+    font-size: 0.2rem;
+    background: #f6f6f6 url("../img/icon_discount.png") no-repeat;
+    background-position: 0.5rem center;
+    background-size: 0.3rem 0.3rem;
+    border-bottom: 5px solid #eaeaea;
+}
+#Evaluation{
+    padding: 0 0.5rem;
+    margin-bottom: 1.2rem;
+}
+#Evaluation h3{
+    padding: 0.15rem 0;
+    font-weight: 400;
+    font-size: 0.16rem;
+    border-bottom: 1px solid #eaeaea;
+}
+#Evaluation h3 a{
+    color: #888;
+    padding-left: 1.3rem;
+    padding-right: 0.5rem;
+    background: url("../img/icon_arrow_more.png");
+    background-size: 0.3rem;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#Evaluation .keyword a{
+    font-size: 0.16rem;
+    padding: 0.1rem 0.2rem;
+    margin: 0.1rem 0.1rem;
+    color: #333;
+    background: #f6f6f6;
+    border-radius: 20px;
+}
+#Evaluation .review-content i{
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+#Evaluation .review-content p{
+    padding-left: 0.1rem;
+}
+#Evaluation .review-content .clearfix  p span{
+    font-size: 0.16rem;
+    display: block;
+}
+#Evaluation .review-content p time{
+    font-size: 0.16rem;
+    color: #888;
+}
+#Evaluation .review-content p i{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.5em;
+    background: url("../img/icon_laud.png");
+    background-size: 0.3rem;
+}
+#Evaluation .review-content p em{
+    font-size: 0.1rem;
+    color: #888;
+    font-style: normal;
+}
+#Evaluation .word{
+    font-size: 0.16rem;
+    padding-bottom: 0.2rem;
+}
+#Evaluation .reply{
+    font-size: 0.16rem;
+    background-color: #f5f5f5;
+    padding: 0.1rem 0.1rem;
+    margin-bottom: 0.3rem;
+}
+#Evaluation .reply span{
+    color: red;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 6.4rem;
+    height: 1rem;
+    text-align: center;
+    border-top: 2px solid #eaeaea;
+    background: white;
+}
+footer .btn a i{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 auto;
+}
+footer .btn a{
+    width: 1.1rem;
+    height: 1rem;
+    padding: 0.1rem;
+    border-right: 1px solid #eaeaea;
+}
+footer .btn span{
+    font-size: 0.16rem;
+    color: #888;
+}
+footer .btn a:first-child i{
+    background: url("../img/icon_home_gray.png") no-repeat;
+    background-size: 0.4rem;
+}
+footer .btn a:last-child i{
+    background: url("../img/icon_shoppingCart.png") no-repeat;
+    background-size: 0.4rem;
+}
+footer .buy a{
+    width: 2.1rem;
+    height: 1rem;
+    padding: 0 0.05rem;
+    line-height: 1rem;
+    color: white;
+    font-size: 0.2rem;
+}
+footer .buy a:first-child{
+    background-color: #f17f00;
+}
+footer .buy a:last-child{
+    background-color: #ca151e;
+}
